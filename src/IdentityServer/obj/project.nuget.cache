@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "N9Sn9wZLo/KMp4gNBux/yKQdkdn1yDuW4TNxEZ75xQOegiPIKGTr6QC5sZCFvQREPyQ4FMVT3scKvToKPf9neg==",
+  "dgSpecHash": "4Ula4/MtzRTLQCtQcQeRCBBIGUfx/aI/nbLhMhPr6Nf1ZS5vf7zmggqkFjbmETZLrJEJvgBu7tA/Np9JJ22RyQ==",
   "success": true,
   "projectFilePath": "c:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
   "expectedPackageFiles": [
@@ -79,11 +79,7 @@
     "C:\\Users\\ACER\\.nuget\\packages\\system.text.encodings.web\\4.7.0\\system.text.encodings.web.4.7.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\ACER\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512",
-    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+    "C:\\Users\\ACER\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512"
   ],
   "logs": []
 }
