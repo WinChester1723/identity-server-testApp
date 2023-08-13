@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {}
+    "C:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {
+    "C:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+        "projectUniqueName": "C:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
         "projectName": "IdentityServer",
-        "projectPath": "c:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+        "projectPath": "C:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\obj\\",
+        "outputPath": "C:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",

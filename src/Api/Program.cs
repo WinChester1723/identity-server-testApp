@@ -1,4 +1,5 @@
 using Api;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,7 +32,8 @@ app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
         {
-            endpoints.MapControllers();
+            endpoints.MapControllers()
+            .RequireAuthorization("ApiScope");
         });
 
 app.Run();

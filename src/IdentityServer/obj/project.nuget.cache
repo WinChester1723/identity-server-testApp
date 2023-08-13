@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Ula4/MtzRTLQCtQcQeRCBBIGUfx/aI/nbLhMhPr6Nf1ZS5vf7zmggqkFjbmETZLrJEJvgBu7tA/Np9JJ22RyQ==",
+  "dgSpecHash": "XqL01G0tZwWBcTkwxl1dgW5UrRQzaq1Qo0gt4gzKgJL7/WEbgSmAgUOkpi/EEWCpE51s4p02zdU+EhjPzy0d2A==",
   "success": true,
-  "projectFilePath": "c:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+  "projectFilePath": "C:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\identitymodel\\4.3.0\\identitymodel.4.3.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\identityserver4\\4.0.0\\identityserver4.4.0.0.nupkg.sha512",
