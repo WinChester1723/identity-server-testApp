@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.ApiService(builder.Configuration);
+builder.Services.ApiServices(builder.Configuration);
 
 // Add services to the container.
 

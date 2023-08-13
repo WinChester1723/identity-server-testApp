@@ -5,7 +5,7 @@ namespace Api
 {
     public static class ConfigServiceDI
     {
-        public static IServiceCollection ApiService(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection ApiServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
