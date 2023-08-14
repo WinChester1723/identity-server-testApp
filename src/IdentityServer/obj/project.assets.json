@@ -3911,19 +3911,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ACER\\.nuget\\packages\\": {}
+    "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+      "projectUniqueName": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
       "projectName": "IdentityServer",
-      "projectPath": "c:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
-      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ACER\\Documents\\CSharp-Projects\\Local-Projects\\identity-server-testApp\\src\\IdentityServer\\obj\\",
+      "projectPath": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+      "packagesPath": "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PashaPashazadeNovumL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
