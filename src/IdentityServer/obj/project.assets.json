@@ -58,6 +58,22 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.Google/7.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -1299,6 +1315,21 @@
         "lib/netstandard2.0/IdentityServer4.Storage.dll",
         "lib/netstandard2.0/IdentityServer4.Storage.pdb",
         "lib/netstandard2.0/IdentityServer4.Storage.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Google/7.0.10": {
+      "sha512": "HwB4AjAzp+wn5fglKUr0FB6uIDTXrBX3m0UiLSpVzZZJQOAYOwJfC6eVcSlGXc+NysQQ4fhR2+L0BDx0zI1NzQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.google/7.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.xml",
+        "microsoft.aspnetcore.authentication.google.7.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.google.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.0": {
@@ -3907,6 +3938,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "IdentityServer4 >= 4.0.0",
+      "Microsoft.AspNetCore.Authentication.Google >= 7.0.10",
       "Serilog.AspNetCore >= 3.2.0"
     ]
   },
@@ -3953,6 +3985,10 @@
           "IdentityServer4": {
             "target": "Package",
             "version": "[4.0.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.Google": {
+            "target": "Package",
+            "version": "[7.0.10, )"
           },
           "Serilog.AspNetCore": {
             "target": "Package",

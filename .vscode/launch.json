@@ -10,7 +10,8 @@
       "configurations": [
         ".NET Core Launch (Identity)",
         ".NET Core Launch (Client)",
-        ".NET Core Launch (Api)"
+        ".NET Core Launch (Api)",
+        ".NET Core Launch (MvcClient)"
       ]
     }
   ],
@@ -19,7 +20,7 @@
       "name": ".NET Core Launch (Identity)",
       "type": "coreclr",
       "request": "launch",
-      "preLaunchTask": "build",
+      "preLaunchTask": "Build: Identity.csproj",
       "program": "${workspaceFolder}/src/IdentityServer/bin/Debug/net7.0/IdentityServer.dll",
       "args": [],
       "cwd": "${workspaceFolder}/src/IdentityServer",
@@ -39,7 +40,7 @@
       "name": ".NET Core Launch (Client)",
       "type": "coreclr",
       "request": "launch",
-      "preLaunchTask": "build",
+      "preLaunchTask": "Build: Client.csproj",
       "program": "${workspaceFolder}/src/Client/bin/Debug/net7.0/Client.dll",
       "args": [],
       "cwd": "${workspaceFolder}/src/Client",
@@ -59,7 +60,7 @@
       "name": ".NET Core Launch (Api)",
       "type": "coreclr",
       "request": "launch",
-      "preLaunchTask": "build",
+      "preLaunchTask": "Build: Api.csproj",
       "program": "${workspaceFolder}/src/Api/bin/Debug/net7.0/Api.dll",
       "args": [],
       "cwd": "${workspaceFolder}/src/Api",
@@ -75,6 +76,26 @@
         "/Views": "${workspaceFolder}/Views"
       }
     },
+    // {
+    //   "name": ".NET Core Launch (MvcClient)",
+    //   "type": "coreclr",
+    //   "request": "launch",
+    //   "preLaunchTask": "Build: MvcClient.csproj",
+    //   "program": "${workspaceFolder}/src/MvcClient/bin/Debug/net7.0/MvcClient.dll",
+    //   "args": [],
+    //   "cwd": "${workspaceFolder}/src/MvcClient",
+    //   "stopAtEntry": false,
+    //   "serverReadyAction": {
+    //     "action": "openExternally",
+    //     "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+    //   },
+    //   "env": {
+    //     "ASPNETCORE_ENVIRONMENT": "Development"
+    //   },
+    //   "sourceFileMap": {
+    //     "/Views": "${workspaceFolder}/Views"
+    //   }
+    // },
     {
       "name": ".NET Core Attach",
       "type": "coreclr",

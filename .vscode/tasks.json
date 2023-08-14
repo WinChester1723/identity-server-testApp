@@ -1,23 +1,52 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "msbuild",
-			"problemMatcher": [
-				"$msCompile"
-			],
-			"group": "build",
-			"label": "Build: Api.csproj",
-			"detail": "Build the Api.csproj project using dotnet build"
-		},
-		{
-			"type": "msbuild",
-			"problemMatcher": [
-				"$msCompile"
-			],
-			"group": "build",
-			"label": "Build: Identity.csproj",
-			"detail": "Build the Identity.csproj project using dotnet build"
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build: Api.csproj",
+      "command": "dotnet",
+      "type": "shell",
+      "args": ["build", "${workspaceFolder}/src/Api/Api.csproj"],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Build: Identity.csproj",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "${workspaceFolder}/src/IdentityServer/IdentityServer.csproj"
+      ],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Build: Client.csproj",
+      "command": "dotnet",
+      "type": "shell",
+      "args": ["build", "${workspaceFolder}/src/Client/Client.csproj"],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    // {
+    //   "label": "Build: MvcClient.csproj",
+    //   "command": "dotnet",
+    //   "type": "shell",
+    //   "args": ["build", "${workspaceFolder}/src/MvcClient/MvcClient.csproj"],
+    //   "problemMatcher": "$msCompile",
+    //   "group": {
+    //     "kind": "build",
+    //     "isDefault": true
+    //   }
+    // }
+  ]
 }
