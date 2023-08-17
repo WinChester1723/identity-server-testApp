@@ -46,15 +46,17 @@ namespace IdentityServer
                 new Client
                 {
                     ClientId = "mvc",
+                    ClientName = "mvc name",
                     ClientSecrets = { new Secret("secret".Sha256()) },
 
                     AllowedGrantTypes = GrantTypes.Code,
+                    AlwaysIncludeUserClaimsInIdToken = true,
 
                     // where to redirect to after login
-                    RedirectUris = { "https://localhost:5002/signin-oidc" },
+                    RedirectUris = { "https://localhost:7069/signin-oidc" },
 
                     // where to redirect to after logout
-                    PostLogoutRedirectUris = { "https://localhost:5002/signout-callback-oidc" },
+                    PostLogoutRedirectUris = { "https://localhost:7069/signout-callback-oidc" },
 
                     AllowOfflineAccess = true,
 

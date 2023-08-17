@@ -1,5 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.DependencyInjection;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace MvcClient
 {
@@ -8,26 +11,35 @@ namespace MvcClient
         public static IServiceCollection MVCServices(this IServiceCollection services, IConfiguration configuration)
         {
 
-            JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
+            // JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
+
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Add("sub", ClaimTypes.NameIdentifier);
 
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = "Cookies";
                 options.DefaultChallengeScheme = "oidc";
             })
-            .AddCookie("Cookies")
+            .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)
             .AddOpenIdConnect("oidc", options =>
             {
+                options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+
                 options.Authority = "https://localhost:5001";
 
                 options.ClientId = "mvc";
                 options.ClientSecret = "secret";
                 options.ResponseType = "code";
+                options.RequireHttpsMetadata = false;
+                options.UsePkce = true;
 
                 options.SaveTokens = true;
 
                 options.Scope.Add("api1");
                 options.Scope.Add("offline_access");
+                
+                options.ClaimActions.MapJsonKey("website", "website");
             });
 
             return services;

@@ -28,6 +28,7 @@ namespace IdentityServer
 
             var builder = services.AddIdentityServer(options =>
             {
+                options.IssuerUri = "https://localhost:5001";
                 // see https://identityserver4.readthedocs.io/en/latest/topics/resources.html
                 options.EmitStaticAudienceClaim = true;
             })
@@ -40,31 +41,31 @@ namespace IdentityServer
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();
 
-             services.AddAuthentication()
-                .AddGoogle("Google", options =>
-                {
-                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+            services.AddAuthentication()
+               .AddGoogle("Google", options =>
+               {
+                   options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
 
-                    options.ClientId = "<insert here>";
-                    options.ClientSecret = "<insert here>";
-                })
-                .AddOpenIdConnect("oidc", "Demo IdentityServer", options =>
-                {
-                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
-                    options.SignOutScheme = IdentityServerConstants.SignoutScheme;
-                    options.SaveTokens = true;
+                   options.ClientId = "<insert here>";
+                   options.ClientSecret = "<insert here>";
+               })
+               .AddOpenIdConnect("oidc", "Demo IdentityServer", options =>
+               {
+                   options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+                   options.SignOutScheme = IdentityServerConstants.SignoutScheme;
+                   options.SaveTokens = true;
 
-                    options.Authority = "https://demo.identityserver.io/";
-                    options.ClientId = "interactive.confidential";
-                    options.ClientSecret = "secret";
-                    options.ResponseType = "code";
+                   options.Authority = "https://demo.identityserver.io/";
+                   options.ClientId = "interactive.confidential";
+                   options.ClientSecret = "secret";
+                   options.ResponseType = "code";
 
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        NameClaimType = "name",
-                        RoleClaimType = "role"
-                    };
-                });
+                   options.TokenValidationParameters = new TokenValidationParameters
+                   {
+                       NameClaimType = "name",
+                       RoleClaimType = "role"
+                   };
+               });
         }
 
         public void Configure(IApplicationBuilder app)
