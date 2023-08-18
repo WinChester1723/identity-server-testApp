@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {}
+    "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {}
   },
   "projects": {
-    "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {
+    "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+        "projectUniqueName": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
         "projectName": "IdentityServer",
-        "projectPath": "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+        "projectPath": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
         "packagesPath": "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\obj\\",
+        "outputPath": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PashaPashazadeNovumL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,7 +43,7 @@
           "dependencies": {
             "IdentityServer4": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.1.2, )"
             },
             "IdentityServer4.EntityFramework": {
               "target": "Package",
@@ -58,6 +58,12 @@
               "version": "[7.0.10, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
             },

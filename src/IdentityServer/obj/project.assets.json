@@ -93,11 +93,11 @@
           }
         }
       },
-      "IdentityServer4/4.0.0": {
+      "IdentityServer4/4.1.2": {
         "type": "package",
         "dependencies": {
-          "IdentityModel": "4.3.0",
-          "IdentityServer4.Storage": "4.0.0",
+          "IdentityModel": "4.4.0",
+          "IdentityServer4.Storage": "4.1.2",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "3.1.0",
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0",
           "Newtonsoft.Json": "12.0.2"
@@ -457,7 +457,7 @@
           "Mono.TextTemplating": "2.2.1"
         },
         "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -2021,15 +2021,15 @@
         "lib/netstandard2.0/IdentityModel.xml"
       ]
     },
-    "IdentityServer4/4.0.0": {
-      "sha512": "jzXbhomPUG+k/XDKjVHJvL/7X0af+jlyCYmaPu4HGe8XSreL+cKBNat92qxrNtoJASA+69+QgL14Fm4cNcRjzA==",
+    "IdentityServer4/4.1.2": {
+      "sha512": "blaxxGuOA7v/w1q+fxn97wZ+x2ecG1ZD4mc/N/ZOXMNeFZZhqv+4LF26Gecyik3nWrJPmbMEtQbLmRsKG8k61w==",
       "type": "package",
-      "path": "identityserver4/4.0.0",
+      "path": "identityserver4/4.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.jpg",
-        "identityserver4.4.0.0.nupkg.sha512",
+        "identityserver4.4.1.2.nupkg.sha512",
         "identityserver4.nuspec",
         "lib/netcoreapp3.1/IdentityServer4.dll",
         "lib/netcoreapp3.1/IdentityServer4.pdb",
@@ -5545,11 +5545,12 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "IdentityServer4 >= 4.0.0",
+      "IdentityServer4 >= 4.1.2",
       "IdentityServer4.EntityFramework >= 4.1.2",
       "Microsoft.AspNetCore.Authentication.Google >= 7.0.10",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.10",
       "Serilog.AspNetCore >= 3.2.0"
@@ -5597,7 +5598,7 @@
         "dependencies": {
           "IdentityServer4": {
             "target": "Package",
-            "version": "[4.0.0, )"
+            "version": "[4.1.2, )"
           },
           "IdentityServer4.EntityFramework": {
             "target": "Package",
@@ -5612,6 +5613,12 @@
             "version": "[7.0.10, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.10, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.10, )"
           },
@@ -5650,16 +5657,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: IdentityServer4 from 4.1.2 to 4.0.0. Reference the package directly from the project to select a different version. \r\n IdentityServer -> IdentityServer4.EntityFramework 4.1.2 -> IdentityServer4 (>= 4.1.2) \r\n IdentityServer -> IdentityServer4 (>= 4.0.0)",
-      "libraryId": "IdentityServer4",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  }
 }

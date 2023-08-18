@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore;
+using MvcClient.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
@@ -15,9 +17,9 @@ namespace MvcClient
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Add("sub", ClaimTypes.NameIdentifier);
 
-            //  services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
-            //     configuration.GetConnectionString("DefaultConnection"),
-            //             builder => builder.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
+             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+                configuration.GetConnectionString("DefaultConnection"),
+                        builder => builder.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
             // services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
             //     configuration.GetConnectionString("DefaultConnection")

@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "8zSH10YxutZWKBiwmce8KCvbaXFtwGDhRH2hgVhoCrP/52McdxrMEqEhaHiMNchkuew0vwIzcYf8epiCKGXA7w==",
-  "success": false,
-  "projectFilePath": "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+  "dgSpecHash": "kb7ZhbAsqS4B3m0MTq9BmZ8787AeZFj1abyLtaxV2S9b4UtCexieE7C3iXNiRYugIVeOMUeIIcisxVbQF0Fxcg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
-    "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\identityserver4\\4.0.0\\identityserver4.4.0.0.nupkg.sha512",
+    "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\identityserver4\\4.1.2\\identityserver4.4.1.2.nupkg.sha512",
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\identityserver4.entityframework\\4.1.2\\identityserver4.entityframework.4.1.2.nupkg.sha512",
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\identityserver4.entityframework.storage\\4.1.2\\identityserver4.entityframework.storage.4.1.2.nupkg.sha512",
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\identityserver4.storage\\4.1.2\\identityserver4.storage.4.1.2.nupkg.sha512",
@@ -119,15 +119,5 @@
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512",
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: IdentityServer4 from 4.1.2 to 4.0.0. Reference the package directly from the project to select a different version. \r\n IdentityServer -> IdentityServer4.EntityFramework 4.1.2 -> IdentityServer4 (>= 4.1.2) \r\n IdentityServer -> IdentityServer4 (>= 4.0.0)",
-      "libraryId": "IdentityServer4",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
