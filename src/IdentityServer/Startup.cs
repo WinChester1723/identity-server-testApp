@@ -4,7 +4,6 @@
 using System.Linq;
 using System.Reflection;
 using IdentityServer.Data;
-using IdentityServer.Models;
 using IdentityServer4;
 using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
@@ -23,7 +22,6 @@ namespace IdentityServer
     public class Startup
     {
         public IWebHostEnvironment Environment { get; }
-
         public Startup(IWebHostEnvironment environment)
         {
             Environment = environment;
@@ -37,12 +35,17 @@ namespace IdentityServer
             var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
             const string connectionString = @"Data Source=DESKTOP-055JKE5;database=IdentityServer4;trusted_connection=yes;TrustServerCertificate=True;MultipleActiveResultSets=true";
 
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(connectionString));
+
+
             var builder = services.AddIdentityServer(options =>
             {
                 options.IssuerUri = "https://localhost:5001";
                 // see https://identityserver4.readthedocs.io/en/latest/topics/resources.html
                 options.EmitStaticAudienceClaim = true;
             })
+            // var builder = services.AddIdentityServer()
             .AddTestUsers(TestUsers.Users)
             .AddConfigurationStore(options =>
                 {
@@ -53,8 +56,7 @@ namespace IdentityServer
                 {
                     options.ConfigureDbContext = b => b.UseSqlServer(connectionString,
                         sql => sql.MigrationsAssembly(migrationsAssembly));
-                })
-                .AddDeveloperSigningCredential();        //This is for dev only scenarios when you don’t have a certificate to use.
+                });        //This is for dev only scenarios when you don’t have a certificate to use.
                                                          // .AddInMemoryIdentityResources(Config.IdentityResources)
                                                          // .AddInMemoryApiScopes(Config.ApiScopes)
                                                          // .AddInMemoryClients(Config.Clients)
@@ -88,10 +90,14 @@ namespace IdentityServer
                    };
                });
 
-               services.AddIdentity<User, Role>()
-                .AddUserManager<UserManager<User>>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
+            services.AddIdentity<IdentityUser, IdentityRole>()
+             .AddUserManager<UserManager<IdentityUser>>()
+             .AddEntityFrameworkStores<ApplicationDbContext>()
+             .AddDefaultTokenProviders();
+
+            services.AddAuthentication();
+            services.AddIdentityCore<IdentityUser>();
+
         }
 
         public void Configure(IApplicationBuilder app)
@@ -123,7 +129,10 @@ namespace IdentityServer
         {
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
-                var userManager = app.ApplicationServices.GetRequiredService<UserManager<User>>();
+                
+                var user = serviceScope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+
+                var userManager = app.ApplicationServices.GetRequiredService<UserManager<IdentityUser>>();
 
                 serviceScope.ServiceProvider.GetRequiredService<PersistedGrantDbContext>().Database.Migrate();
 
