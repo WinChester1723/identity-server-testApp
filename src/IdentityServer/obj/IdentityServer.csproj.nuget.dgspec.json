@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {}
+    "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {
+    "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+        "projectUniqueName": "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
         "projectName": "IdentityServer",
-        "projectPath": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+        "projectPath": "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
         "packagesPath": "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\obj\\",
+        "outputPath": "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PashaPashazadeNovumL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,7 +45,27 @@
               "target": "Package",
               "version": "[4.0.0, )"
             },
+            "IdentityServer4.EntityFramework": {
+              "target": "Package",
+              "version": "[4.1.2, )"
+            },
             "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[7.0.10, )"
             },

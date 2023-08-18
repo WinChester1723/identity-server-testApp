@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using MvcClient.Persistence;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
@@ -22,9 +19,9 @@ namespace MvcClient
             //     configuration.GetConnectionString("DefaultConnection"),
             //             builder => builder.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
-                configuration.GetConnectionString("DefaultConnection")
-            ));
+            // services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+            //     configuration.GetConnectionString("DefaultConnection")
+            // ));
 
             services.AddAuthentication(options =>
             {
@@ -50,6 +47,7 @@ namespace MvcClient
                 options.Scope.Add("offline_access");
                 
                 options.ClaimActions.MapJsonKey("website", "website");
+                options.ClaimActions.MapUniqueJsonKey("myclaim1", "myclaim1");
             });
 
             return services;

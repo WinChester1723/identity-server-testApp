@@ -37,16 +37,16 @@
         "isDefault": true
       }
     },
-    // {
-    //   "label": "Build: MvcClient.csproj",
-    //   "command": "dotnet",
-    //   "type": "shell",
-    //   "args": ["build", "${workspaceFolder}/src/MvcClient/MvcClient.csproj"],
-    //   "problemMatcher": "$msCompile",
-    //   "group": {
-    //     "kind": "build",
-    //     "isDefault": true
-    //   }
-    // }
+    {
+      "label": "Build: MvcClient.csproj",
+      "command": "dotnet",
+      "type": "shell",
+      "args": ["build", "${workspaceFolder}/src/MvcClient/MvcClient.csproj"],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
   ]
 }
