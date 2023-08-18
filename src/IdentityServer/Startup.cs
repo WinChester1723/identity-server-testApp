@@ -88,6 +88,10 @@ namespace IdentityServer
 
         public void Configure(IApplicationBuilder app)
         {
+
+            // this will do the initial DB population
+            InitializeDatabase(app);
+
             if (Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
