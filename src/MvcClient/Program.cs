@@ -1,3 +1,4 @@
+using Microsoft.IdentityModel.Logging;
 using MvcClient;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.MVCServices(builder.Configuration);
+
+IdentityModelEventSource.ShowPII = true;
 
 var app = builder.Build();
 

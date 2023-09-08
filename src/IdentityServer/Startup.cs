@@ -7,6 +7,8 @@ using IdentityServer.Data;
 using IdentityServer4;
 using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
+
+// using IdentityServer4.EntityFramework.Mappers;
 using IdentityServerHost.Quickstart.UI;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -129,11 +131,6 @@ namespace IdentityServer
         {
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
-                
-                var user = serviceScope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
-
-                var userManager = app.ApplicationServices.GetRequiredService<UserManager<IdentityUser>>();
-
                 serviceScope.ServiceProvider.GetRequiredService<PersistedGrantDbContext>().Database.Migrate();
 
                 var context = serviceScope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();

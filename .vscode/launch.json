@@ -8,9 +8,9 @@
     {
       "name": "All Projects",
       "configurations": [
-        ".NET Core Launch (Identity)",
+        // ".NET Core Launch (Identity)",
         // ".NET Core Launch (Client)",
-        ".NET Core Launch (Api)",
+        // ".NET Core Launch (Api)",
         ".NET Core Launch (MvcClient)"
       ],
       "stopAll": true
