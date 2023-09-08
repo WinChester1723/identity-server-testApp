@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "enxJylngsYRgyGRW3tstI+v5xONQm/QlOmoG41a2+5mhOTQQSKJeZh+mpehTlWOtwVxPunBqDMyyjjv5keOC6A==",
+  "dgSpecHash": "TE5rRkMhK5nZ+fmy0gRBDetTmi2wt/Lw6+XNPn+BlCe+JT9r/YqnOkM+yXJZ/wQq2Q/jZiu7Lm2YWOoWK2y3KQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
+  "projectFilePath": "c:\\Users\\PashaPashazadeNovumL\\source\\repos\\NovumProjects\\MyProject\\identity-server-testApp\\src\\IdentityServer\\IdentityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\PashaPashazadeNovumL\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
